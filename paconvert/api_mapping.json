@@ -16742,9 +16742,7 @@
     "args_list": [
       "img",
       "mean",
-      "std"
-    ],
-    "unsupport_args": [
+      "std",
       "inplace"
     ]
   },

@@ -41,7 +41,8 @@ def test_case_1():
              [0.5, 0.5]]
         ])
 
-        result = F.normalize(img, mean=mean, std=std)
+        # TODO(guozixu): 这里的 inplace 是否有转写方式？
+        result = F.normalize(img, mean=mean, std=std, inplace=True)
         """
     )
     obj.run(pytorch_code, ["result"])
